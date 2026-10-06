@@ -135,7 +135,6 @@ O link de post ou reel é lido com a biblioteca `instaloader`, sem login. O Inst
 
 ## Problemas comuns
 
-- **Erro mencionando "gemini" ou "modelo" no cartão**: o servidor ainda está rodando o `main.py` antigo. Pare o processo na porta 7860 e suba de novo com o arquivo novo.
 - **`ModuleNotFoundError` ou `attempted relative import`**: rode `uvicorn app.main:app` a partir da pasta `projeto/`, não de dentro de `app/`, e confirme que existe `app/__init__.py`.
 - **`OSError: [E050] Can't find model 'pt_core_news_lg'`**: rode `python -m spacy download pt_core_news_lg` com o ambiente virtual ativo.
 - **`FileNotFoundError` do `.pkl`**: o arquivo precisa estar em `projeto/`, uma pasta acima de `app/`.
